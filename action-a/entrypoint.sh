@@ -1,4 +1,4 @@
 #!/bin/sh -l
 
-pushd /src
+cd /src
 dotnet publish -c Release -o /out
