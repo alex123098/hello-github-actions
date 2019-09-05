@@ -11,4 +11,4 @@ LABEL "com.github.actions.icon"="mic"
 LABEL "com.github.actions.color"="red"
 LABEL "com.github.actions.description"="Trying to run C# code as a Github Action"
 
-
+ENTRYPOINT ["dotnet", "run"]
