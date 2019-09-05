@@ -1,3 +1,4 @@
 #!/bin/sh -l
 
-sh -c "echo Hello world my name is $MY_NAME"
+pushd /src
+dotnet publish -c Release -o /out
