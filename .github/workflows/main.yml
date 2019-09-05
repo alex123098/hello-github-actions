@@ -1,7 +1,7 @@
 name: A workflow for my Hello World file
 on: push
 jobs:
-  build:
+  greet:
     name: Hello World action
     runs-on: ubuntu-latest
     steps:
@@ -9,3 +9,9 @@ jobs:
     - uses: ./action-a
       env:
         MY_NAME: "Oleksii"
+  build:
+    name: C# hello world
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@master
+    - uses: ./action-b
