@@ -7,3 +7,7 @@ jobs:
     steps:
     - uses: actions/checkout@master
     - uses: ./action-a
+    - uses: actions/upload-artifact@master
+      with:
+        name: simple-project
+        path: out
