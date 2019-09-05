@@ -14,7 +14,6 @@ LABEL "com.github.actions.icon"="mic"
 LABEL "com.github.actions.color"="red"
 LABEL "com.github.actions.description"="Trying to run C# code as a Github Action"
 
-WORKDIR /app
 COPY --from=build /app/out .
 ENTRYPOINT ["dotnet", "action-b.dll"]
 
