@@ -1,3 +1,6 @@
-#!/bin/sh -l
+#!/bin/sh -xe
 
-sh -c "echo Hello world my name is $MY_NAME"
+#apk add --no-cache tree
+#tree
+
+dotnet publish src/action-b.csproj -c Release -o ../out

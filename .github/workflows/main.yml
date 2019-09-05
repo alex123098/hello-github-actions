@@ -1,11 +1,13 @@
 name: A workflow for my Hello World file
 on: push
 jobs:
-  build:
-    name: Hello World action
+  greet:
+    name: Build application
     runs-on: ubuntu-latest
     steps:
     - uses: actions/checkout@master
     - uses: ./action-a
-      env:
-        MY_NAME: "Mona"
+    - uses: actions/upload-artifact@master
+      with:
+        name: simple-project
+        path: out
