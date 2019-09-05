@@ -1,4 +1,6 @@
-#!/bin/sh -l
+#!/bin/sh -xe
 
-cd /src
-dotnet publish -c Release -o /out
+apk add --no-cache tree
+tree
+#cd /src
+#dotnet publish -c Release -o /out
